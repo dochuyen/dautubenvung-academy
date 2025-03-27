@@ -56,7 +56,7 @@ export const StyleCheckoutQR = styled.div`
       display: none !important;
     }
   }
-  @media (min-width: 800px;) {
+  @media (min-width: 800px) {
     .box {
     }
   }
