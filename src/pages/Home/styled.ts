@@ -272,16 +272,15 @@ export const StyledHome = styled.div<any>`
             transition: transform 400ms, box-shadow 400ms;
             text-decoration: none;
             display: flex;
-            width: 281px;
-
+            width: 100%;
             padding: 8px;
             justify-content: space-between;
             flex-direction: column;
             align-items: flex-start;
             gap: 8px;
             border-radius: 3px;
-
             will-change: transform, box-shadow;
+
             .title {
               display: flex;
               align-items: center;
@@ -294,6 +293,9 @@ export const StyledHome = styled.div<any>`
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
+              }
+              img {
+                height: 408px;
               }
             }
             .body {
@@ -313,14 +315,14 @@ export const StyledHome = styled.div<any>`
                   color: ${(props) =>
                     props.screen_mode === "dark" ? "#fff" : "#080808"};
                   font-family: Roboto;
-                  font-size: 15px;
+                  font-size: 18px;
                   font-style: normal;
                   font-weight: 600;
                   line-height: normal;
                 }
                 .text-demo {
                   color: #020c2f;
-                  font-size: 11px;
+                  font-size: 15px;
                   font-family: Arial, sans-serif;
                 }
                 .box-buy {
@@ -330,26 +332,25 @@ export const StyledHome = styled.div<any>`
                   margin-top: 20px;
                   justify-content: center;
                   .price {
-                    font-size: 11px !important;
                     font-weight: bold;
-                    color: #131c2e !important;
                     text-align: center;
-                    background: #ffcf03;
+                    background: rgb(255, 207, 3);
                     border-radius: 20px;
                     padding: 3px 20px;
                     display: flex;
                     align-items: center;
                     font-family: system-ui;
+                    font-size: 11px !important;
+                    color: rgb(19, 28, 46) !important;
                   }
                   .buy-now {
                     cursor: pointer;
-                    color: #020c2f;
+                    color: rgb(2, 12, 47);
                     border: none;
-                    background-color: #56d699;
+                    background-color: rgb(86, 214, 153);
                     border-radius: 20px;
                     padding: 3px 15px;
                     font-family: sans-serif;
-                    font-weight: bold;
                     display: flex;
                     align-items: center;
                     font-weight: bold;

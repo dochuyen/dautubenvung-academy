@@ -75,6 +75,12 @@ export const Home = () => {
       });
     }, 100); // Adjust the delay as needed to ensure routing is complete before scrolling
   };
+  const filteredSortedCourses = listCourse?.rows
+    ?.filter((item: any) => [20, 21, 22].includes(item.course_id))
+    ?.sort((a: any, b: any) => {
+      const order = [20, 22, 21];
+      return order.indexOf(a.course_id) - order.indexOf(b.course_id);
+    });
   return (
     <StyledHome>
       <div className="company">
@@ -188,7 +194,7 @@ export const Home = () => {
                 gap="24px"
                 justify="center"
               >
-                {listCourse.rows?.map((item: any, index: any) => (
+                {filteredSortedCourses?.map((item: any, index: any) => (
                   <div
                     onClick={() =>
                       handleScrollTo(
@@ -202,7 +208,7 @@ export const Home = () => {
                       <img
                         style={{
                           width: "100%",
-                          height: "150px",
+                          // height: "150px",
                           borderRadius: "3px",
                           objectFit: "cover",
                         }}
@@ -247,7 +253,6 @@ export const Home = () => {
                   </div>
                 ))}
               </Flex>
-             
             </div>
           </Element>
         </div>

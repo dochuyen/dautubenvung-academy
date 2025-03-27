@@ -75,7 +75,7 @@ export const CheckoutQR = () => {
     axios
       .get(API_GET_PAID, {
         headers: {
-          Authorization: `apikey ${API_KEY}`,
+          Authorization: `Apikey ${API_KEY}`,
           "Content-Type": "application/json",
         },
       })
@@ -440,8 +440,8 @@ export const CheckoutQR = () => {
                 fontWeight: 700,
               }}
             >
-              Sau khi thanh toán hệ thống sẽ tự động kích hoạt chương trình khoá
-              học của bạn
+              Sau khi thanh toán thành công, bạn vui lòng chờ 1-2 phút, hệ thống
+              sẽ tự động kích hoạt chương trình khoá học của bạn
             </div>
           </div>
         )}

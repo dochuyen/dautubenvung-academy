@@ -12,7 +12,7 @@ export const StyleCheckoutQR = styled.div`
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      margin: 0 0 3em;
+      margin: 0 0 2em;
       list-style: none;
       padding: 0;
       div {
@@ -117,7 +117,7 @@ export const StyleCheckoutQR = styled.div`
     .box-qr {
       .titleqr {
         text-align: center;
-        margin-top: 20px;
+        /* margin-top: 20px; */
         font-size: 1.8rem;
         color: #fff;
         font-weight: 500;
